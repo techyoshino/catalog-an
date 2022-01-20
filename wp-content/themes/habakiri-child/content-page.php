@@ -17,7 +17,7 @@
 		}
 		?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
-		<div class="entry__content">
+		<div class="entry__content <?php echo esc_attr($post->post_name);?>">
 			<?php the_content(); ?>
 		<!-- end .entry__content --></div>
 		<?php do_action( 'habakiri_after_entry_content' ); ?>
@@ -29,4 +29,6 @@
 		comments_template( '', true );
 	}
 	?>
+	
+
 </article>

@@ -435,11 +435,36 @@ $lightgreen: #EAF1CE;
 
 
 
-.machine-area {}
+.machine-area {
+
+}
 
 .shuhen-area {
     display: none;
 }
+
+
+
+////////////////////////////////////////////////////
+// コンタクトフォーム
+////////////////////////////////////////////////////
+
+
+.contact input[type="text"],.contact input[type="email"],.contact input[type="tel"],.contact textarea{
+    width: 100%; 
+    max-width: 100%;
+
+}
+
+.contact {
+    dl{
+        dd{
+            margin: 0 0 1.8em 0em;
+        }
+    }
+}
+
+
 
 // FOOTER COPYRIGHT
 ////////////////////////////////////////////////////

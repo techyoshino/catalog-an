@@ -824,6 +824,15 @@ textarea::placeholder {
   display: none;
 }
 
+.contact input[type="text"], .contact input[type="email"], .contact input[type="tel"], .contact textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact dl dd {
+  margin: 0 0 1.8em 0em;
+}
+
 .footer {
   background-color: #EBEBEB;
 }

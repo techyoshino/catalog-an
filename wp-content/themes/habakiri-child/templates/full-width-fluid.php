@@ -26,7 +26,11 @@
 			
 		<!-- end #main --></main>
 
+		<?php
+		/*
 		<?php get_sidebar(); ?>
+		*/
+		?>
 	<!-- end .container-fluid --></div>
 
 <!-- end .sub-page-contents --></div>
