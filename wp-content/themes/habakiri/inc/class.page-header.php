@@ -32,7 +32,7 @@ class Habakiri_Page_Header {
 		$title_classes = $this->get_title_classes();
 		$title         = $this->get_title();
 		?>
-		<div class="page-header text-center <?php echo esc_attr( $classes ); ?>" <?php echo $style; ?>>
+		<div class="page-header text-center <?php /*echo esc_attr( $classes );*/ ?>" <?php /*echo $style;*/ ?>>
 			<div class="container">
 				<h1 class="page-header__title <?php echo esc_attr( $title_classes ); ?>">
 					<?php echo apply_filters( 'habakiri_title_in_page_header', esc_html( $title ) ); ?>

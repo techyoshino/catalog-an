@@ -87,3 +87,24 @@ var slider = new Swiper('.slider-top-bottom', {
 });
 
 
+//navigation bar 
+/////////////////////////////////////
+
+
+var BGElement = document.getElementById('backdrop');
+var body_element = document.getElementsByTagName('body');
+
+function closenaviBtn(){
+    document.getElementById("drawer").style.display = "none";
+  BGElement.classList.remove('backdrop');
+  body_element[0].style.overflow = "none";
+  body_element[0].classList.remove("over-flow-hidden");
+
+}
+function opennaviBtn(){
+    document.getElementById("drawer").style.display = "block";
+  BGElement.classList.add('backdrop');
+  document.getElementsByClassName("swiper-wrapper")[0].style.zIndex = "0";
+  body_element[0].classList.add("over-flow-hidden");
+}
+

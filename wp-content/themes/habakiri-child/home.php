@@ -68,7 +68,7 @@
 						<section class="top-search-in section-1">
 
 
-							<a href="#">
+							<a href="https://search.kikaicatalog.com/products">
 								<h3>機械・周辺機器を探す</h3>
 								<p>マシニングセンタや旋盤、各種ツーリング、ソフトウェアなどを検索</p>
 
@@ -135,7 +135,7 @@
 
 						<section class="top-search-in section-2">
 
-						<a href="#">
+						<a href="https://search.kikaicatalog.com/makers">
 							<h3>メーカーから探す</h3>
 							<p>メーカー名から目的の機械を検索</p>
 						</a>	
@@ -149,8 +149,8 @@
 							<h2>キーワードから探す</h2>
 							<p>
 								
-							<form method="#" action="#" class="search_container">
-								<input type="text" placeholder="検索キーワードを入力してください">
+							<form method="get" action="https://search.kikaicatalog.com/products" class="search_container">
+								<input type="text" placeholder="検索キーワードを入力してください" name="keyword">
 
 								<!-- <input type="submit" value="検索" class="fas"> -->
 
@@ -379,6 +379,57 @@
 
 							</div>
 						</div><!--//bottom-carousel-->
+
+
+
+						<div class="new_blog">
+
+						<h2>ブログの新着情報</h2>
+
+							<?php
+								$information= get_posts( array(
+								//ここで取得条件を指定する
+								'posts_per_page' => 4
+								));
+								if( $information):
+							?>
+								<ul>
+									<?php
+									foreach( $information as $post ):
+									setup_postdata( $post );
+									?>
+									<li>
+										<div class="new_blog_pic">
+										<?php the_post_thumbnail('thumbnail'); ?>
+										</div>
+
+										<div class="new_blog_txt">
+										<span><?php the_time('Y年n月j日'); ?></span>
+										<span class="blog_cap"><?php the_title(); ?></span>
+										<a href="<?php the_permalink(); ?>"> 
+											<?php
+												if ( mb_strlen( $post->post_content, 'UTF-8' ) > 80 ) {
+												$content = mb_substr( strip_tags( $post->post_content ), 0, 80, 'UTF-8' );
+												echo $content . '…';
+												} else {
+												echo strip_tags( $post->post_content );
+												}
+												?>
+										</a>
+										</div>	
+
+									</li>
+									<?php
+									endforeach;
+									wp_reset_postdata();
+									?>
+								</ul>
+								<?php else: ?>
+								<p>表示できる情報はありません。</p>
+							<?php endif; ?>
+						
+						
+						</div><!--//new_blog -->
 
 				
 

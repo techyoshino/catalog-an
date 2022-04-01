@@ -14,7 +14,11 @@
 		<div class="col-md-9">
 			<main id="main" role="main">
 
+				
+
 				<?php get_template_part( 'modules/breadcrumbs' ); ?>
+
+
 				<?php
 				if ( is_404() ) {
 					get_template_part( 'content', 'none' );
@@ -25,6 +29,8 @@
 					}
 				}
 				?>
+
+
 				
 			<!-- end #main --></main>
 		<!-- end .col-md-9 --></div>

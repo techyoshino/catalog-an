@@ -11,6 +11,9 @@
 ?>
 <article <?php post_class( array( 'article', 'article--page' ) ); ?>>
 	<div class="entry">
+
+	
+
 		<?php
 		if ( Habakiri::get( 'is_displaying_page_header' ) === 'false' ) {
 			Habakiri::the_title();

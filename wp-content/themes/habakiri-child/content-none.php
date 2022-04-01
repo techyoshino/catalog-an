@@ -20,6 +20,8 @@ if ( is_404() ) {
 <article class="article article--<?php echo esc_attr( $modifer ); ?>">
 	<div class="entry">
 
+	
+
 		<div class="entry__content">
 
 			<?php if ( is_404() ) : ?>

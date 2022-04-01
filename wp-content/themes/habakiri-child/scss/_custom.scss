@@ -1,3 +1,6 @@
+
+
+
 /* responsive */
 
 .on {
@@ -31,7 +34,7 @@
 /* maincolor
 ------------------------------------------------------------ */
 
-$main-green: #B1CB40;
+$main-green: #abcd03;
 $lightgreen: #EAF1CE;
 
 
@@ -68,16 +71,146 @@ $lightgreen: #EAF1CE;
     padding: 0px 0px;
 }
 
-.header__col{
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 10px 0px;
-    font-weight: bold;
 
-    img{
-        width: 210px;
+.header__content{
+    height: 100px;
+    padding: 23px 20px 22px;
+    background-color: #abcd03;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    .logo{
+        height: 51.2px;
+        padding: 3px 0 0;
+        width: 50%;
+
+        @include breakpoint(mobile) {
+            width: auto;
+        }
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
+
+        .search-input{
+            width: 22.6vw;
+            height: 55px;
+            margin-right: 12px;
+        
+        }
+
+        .el-input__inner{
+            -webkit-appearance: none;
+            background-color: #fff;
+            background-image: none;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            display: inline-block;
+            font-size: inherit;
+            // height: 40px;
+            height: 100%;
+            line-height: 40px;
+            outline: 0;
+            padding: 0 15px;
+            transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+            width: 100%;
+            // margin-top: 0.6em;
+            // padding: 0.6em;
+
+        }
+
+        .search-button{
+            border: 2px solid #d4d4d2;
+            background-color: #ebebeb;
+            width: 55px;
+            height: 100%;
+            font-size: 25px;
+            cursor: pointer;
+            color: #212529;
+            padding: 13px 13px;
+        }
+
+    }
+
+    .logo-toptext{
+        font-size: 10px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: 1.5px;
+        text-align: left;
+        color: #fff;
+
+        .site-branding__logo{
+
+            img{
+                width:256px;
+            }
+          
+        }
     }
 }
+
+////////////////////////////////////////////////////
+//ハンバーガーメニュー
+
+#responsive-btn{
+    width: 55px;
+    height: 55px;
+    padding:12px;
+}
+#responsive-btn:before{
+    display: none;
+}
+
+.hamburger-button {
+    
+    width: 55px;
+    height: 55px;
+    border-radius: 28px;
+    border: 2px solid #abcd03;
+    background-color: #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+.bar{
+    background-color: #abcd03;
+    width: 25.9px;
+    height: 4px;
+}
+.bar1 {
+    margin: 0 0 7.7px;
+}
+.bar2{
+    margin: 7.7px 0;
+}
+
+.bar3 {
+    margin: 7.7px 0 0;
+}
+
+
+// .header__col{
+//     color: #fff;
+//     font-size: 1.2rem;
+//     padding: 10px 0px;
+//     font-weight: bold;
+
+//     img{
+//         width: 210px;
+//     }
+// }
 
 .site-branding {
     display: flex;
@@ -92,19 +225,23 @@ $lightgreen: #EAF1CE;
             color: #fff;
             line-height: 0%;
             font-size: 40px;
-            padding: 0px 0px 20px;
+            // padding: 0px 0px 20px;
             display: inline-block;
         }
 
+        img{
+            width: 256px;
+        }
+
     }
-    p {
-        font-size: 13px;
-        margin: 10px 20px;
-        display: flex;
-        align-items: center;
-        position: relative;
-        top: 10px;
-    }
+    // p {
+    //     font-size: 13px;
+    //     margin: 10px 20px;
+    //     display: flex;
+    //     align-items: center;
+    //     position: relative;
+    //     top: 10px;
+    // }
 }
 
 .header-in {
@@ -136,6 +273,24 @@ $lightgreen: #EAF1CE;
         margin: 0;
     }
 }
+
+////////////////////////////////////////////////////
+//共通見出し「header」
+
+
+
+.page-header{
+    background-color:#fff !important;
+    border: none;
+    color:#595757 !important;
+    text-align: left;
+    margin: 0;
+    padding: 60px 0 0;
+}
+
+
+
+
 
 
 /* Navi
@@ -208,6 +363,96 @@ $lightgreen: #EAF1CE;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+/* top-novigation
+------------------------------------------------------------ */
+#menu-menu1{
+    
+    li{
+        font-size: 18px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: left;
+        color: #595757;
+        padding: 35px 20px 27px; 
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: #595757;
+        }
+    }
+}
+
+.drawer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: #ebebeb;
+    padding: 10px 36px;
+	display: none;
+	overflow-y: scroll;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
+.header-navi {
+    font-size: 25px !important;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #abcd03 !important; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0 27px 36px;
+
+    @include breakpoint(mobile) {
+        padding: 35px 0 27px 36px !important;
+    }
+}
+
+.drawer-link{
+    font-size: 18px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #595757;
+    padding: 35px 36px 27px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(89,87,87,.5);
+    z-index: 1;
+}
+
+.over-flow-hidden {
+    overflow: hidden;
+}
+
+
+
 
 
 /* search_btn
@@ -318,9 +563,11 @@ $lightgreen: #EAF1CE;
             margin: 0;
             line-height: 0%;
             height: 60px;
+            font-size: 1.6rem;
 
             @include breakpoint(mobile) {
-                width: 80%;
+                width: 100%;
+                margin-bottom: 10px;
             }
           }
           .search_container input[type="text"]:focus {
@@ -340,13 +587,14 @@ $lightgreen: #EAF1CE;
             vertical-align: top;
             height: 60px;
             font-weight: bold;
+            font-size: 1.6rem;
 
             .fa-search:before {
                 margin-left: 5px;
             }
 
             @include breakpoint(mobile) {
-                width: 19%;
+                width: 1004%;
             }
           }
           .search_container ::-webkit-input-placeholder {
@@ -380,6 +628,65 @@ $lightgreen: #EAF1CE;
 
 
 }
+
+
+/* top-blog「new」
+------------------------------------------------------------ */
+
+.new_blog{
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        
+        
+        li{
+            
+            width:  50%; 
+            overflow: hidden;
+            // padding: 10px;
+            display: flex;
+            // justify-content: center;
+            // align-items: center;
+            padding: 10px;
+
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
+            
+            
+
+            .new_blog_pic{
+                width: 30%;
+            }
+
+            .new_blog_txt{
+                width: 70%;
+                padding: 0px 0px 0px 10px;
+
+                span{
+                    display: block;
+                }
+                span.blog_cap{
+                    font-weight: bold;
+                }
+
+
+                a{
+                    word-break: break-all;
+                }
+            }
+        };
+
+        li::marker{
+            display: none;
+        }
+    }
+}
+
 
 
 /* listing-pr
@@ -450,9 +757,107 @@ $lightgreen: #EAF1CE;
 ////////////////////////////////////////////////////
 
 
+.contact-basic{
+    strong{
+        font-size: 1.8rem;
+        display: inline-block;
+        padding: 20px 0px 10px;
+    }
+
+    .checkbox-597{
+        label{
+            font-weight: normal;
+        }
+    }
+}
+
+.contact-basic{
+    width: 90%;
+    margin: 0 auto;
+
+    .checkbox-597{
+        .wpcf7-checkbox{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            border: 1px solid;
+            padding: 20px 30px;
+
+            @include breakpoint(mobile) {
+                display: inline-block;
+                padding: 20px 10px;
+            }
+        }
+    
+        
+    }
+
+    .btn_contact7{
+        text-align: center;
+    }
+    
+    input[type="submit"] {
+        background-color: #E59830;
+        border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 90%;
+        line-height: 1;
+        padding: 20px;
+        text-transform: uppercase;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        width: 200px;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        @include breakpoint(mobile) {
+            font-size: 1.2rem;
+            width: auto;
+        }
+    }
+
+    
+    .wpcf7-spinner{
+        position: absolute;
+    }
+    
+
+}
+
+.btn_contact7{
+
+    input[type="button"] {
+        background-color: #000;
+        border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 90%;
+        line-height: 1;
+        padding: 20px;
+        text-transform: uppercase;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        width: 200px;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        @include breakpoint(mobile) {
+            font-size: 1.2rem;
+            width: auto;
+        }
+    }
+}
+
+
+
+
 .contact input[type="text"],.contact input[type="email"],.contact input[type="tel"],.contact textarea{
     width: 100%; 
     max-width: 100%;
+    padding: 10px;
 
 }
 
@@ -463,6 +868,23 @@ $lightgreen: #EAF1CE;
         }
     }
 }
+
+
+.wpcf7c-conf{
+    background:#e8f0fe;
+    border: solid 1px #e6e6e6;
+}
+
+.wpcf7c-elm-step2 {
+    margin: 0px 100px;
+
+    @include breakpoint(mobile) {
+        margin: 0px 10px;
+    }
+}
+
+
+
 
 
 
@@ -494,7 +916,7 @@ $lightgreen: #EAF1CE;
 
             li{
                 list-style: none;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
 
                 a{
                    // color: #fff;

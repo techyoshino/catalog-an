@@ -10,8 +10,14 @@
  */
 ?>
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
+	
 	<div class="entry">
+
 		<?php Habakiri::the_title(); ?>
+
+		<?php the_post_thumbnail('full'); ?>
+
+
 		<?php get_template_part( 'modules/entry-meta' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
 		<div class="entry__content entry-content">
@@ -23,8 +29,11 @@
 	<?php get_template_part( 'modules/link-pages' ); ?>
 	<?php get_template_part( 'modules/related-posts' ); ?>
 	<?php
+
+	/*
 	if ( comments_open() || pings_open() || get_comments_number() ) {
 		comments_template( '', true );
 	}
+	*/
 	?>
 </article>

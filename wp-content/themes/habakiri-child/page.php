@@ -11,19 +11,26 @@
 ?>
 <?php get_header(); ?>
 
+
+
 <?php get_template_part( 'modules/page-header' ); ?>
+
+
+
+
 <div class="sub-page-contents">
 
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
 				<main id="main" role="main">
-
+					<?php the_post_thumbnail('full'); ?>
 					<?php get_template_part( 'modules/breadcrumbs' ); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'content', 'page' ); ?>
 					<?php endwhile; ?>
 
+					
 				<!-- end #main --></main>
 			<!-- end .col-md-9 --></div>
 			<div class="col-md-3">
@@ -33,4 +40,6 @@
 	<!-- end .container --></div>
 
 <!-- end .sub-page-contents --></div>
+
+
 <?php get_footer(); ?>

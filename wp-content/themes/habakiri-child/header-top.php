@@ -18,6 +18,7 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.11.1/theme-chalk/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<?php wp_head(); ?>
 </head>
@@ -31,19 +32,72 @@
 	?>
 	<header id="header" class="header <?php echo esc_attr( implode( ' ', $header_classes ) ); ?>">
 		<?php do_action( 'habakiri_before_header_content' ); ?>
-		<div class="container">
-			<div class="row header__content">
-				<div class="col-xs-10 <?php echo esc_attr( $site_branding_size ); ?> header__col">
-					<?php bloginfo( 'description' ); ?>
-					<?php get_template_part( 'modules/site-branding' ); ?>
+		<div class="container-header">
+			
+			<div class="header__content">
+
+				<div class="logo">
+					<div class="logo-toptext"><?php bloginfo( 'description' ); ?></div>
+					<div class="logo-bottomtext"><?php get_template_part( 'modules/site-branding' ); ?></div>
 				<!-- end .header__col --></div>
-				<div class="col-xs-2 <?php echo esc_attr( $gnav_size ); ?> header__col global-nav-wrapper clearfix">
+				<form method="get" action="https://search.kikaicatalog.com/products" class="search_container">
+				<div class="search">
+					<div class="search-input el-input"><!---->
+						<input type="text" class="el-input__inner" placeholder="検索キーワードを入力してください" name="keyword">
+					</div> 
+					<button type="submit" class="search-button">	<i class="el-icon-search"></i> </button>
+				<!-- <div class="search-button"><i class="el-icon-search"></i></div> -->
+				</form>
+				<!-- end .search--></div>
+
+
+				<div class="header__col global-nav-wrapper clearfix">
 					<?php get_template_part( 'modules/gnav' ); ?>
-					<div id="responsive-btn"></div>
-				<!-- end .header__col --></div>
+					<!-- <div id="responsive-btn"></div> -->
+
+					<div class="hamburger-button" id="hamburger-button" onclick="opennaviBtn()">
+						<div class="bar bar1"></div> 
+						<div class="bar bar2"></div> 
+						<div class="bar bar3"></div>
+					</div>
+					
+
+				<!-- end .header__col --></div>	
+
+
+
+				<div class="drawer" id="drawer">
+
+					<div data-v-99f36d20="" class="drawer-link header-navi" style="cursor: default;">
+					MENU
+						<div style="cursor: pointer;" class="btn_close" id="btn_close" onclick="closenaviBtn()">
+							<img src="https://i.imgur.com/kIGyYqU.png" alt="">
+						</div>
+					</div>
+					
+			
+					<?php
+					wp_nav_menu( array( 
+						'menu' => 'menu1' 
+					  ) );
+					  
+					?>
+				</div>
+
+				
 			<!-- end .row --></div>
 		<!-- end .container --></div>
 		<?php do_action( 'habakiri_after_header_content' ); ?>
 	<!-- end #header --></header>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>
+
+	
+
+		<!-- modal  Translations-->
+
+		<div id="backdrop"></div>
+
+
+
+
