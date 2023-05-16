@@ -27,7 +27,7 @@ if ( is_404() ) {
 			<?php if ( is_404() ) : ?>
 
 				<p>
-					<?php _e( 'Woops! Page not found.', 'habakiri' ); ?><br />
+					<?php _e( 'Woops! ご指定のページが見つかりませんでした.', 'habakiri' ); ?><br />
 					<?php _e( 'The page you are looking for may be moved or deleted.', 'habakiri' ); ?><br />
 					<?php _e ( 'Please search this serch box.', 'habakiri' ); ?>
 				</p>

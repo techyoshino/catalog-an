@@ -17,8 +17,23 @@
 
 		<?php the_post_thumbnail('full'); ?>
 
-
+		<?php
+		/*
 		<?php get_template_part( 'modules/entry-meta' ); ?>
+		*/
+		?>
+		<div class="entry-meta">
+			<ul class="entry-meta__list">
+				<li class="entry-meta__item published">
+					<time><?php the_time("Y/m/d"); ?></time>
+				</li>
+				
+				<li class="entry-meta__item categories">
+					カテゴリー: <?php the_category(' '); ?></a>
+				</li>			
+			</ul>
+		</div>
+
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
 		<div class="entry__content entry-content">
 			<?php the_content(); ?>

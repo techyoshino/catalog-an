@@ -108,6 +108,7 @@ class Habakiri_Entry_Meta {
 	/**
 	 * Return the taxonomies
 	 */
+	
 	protected function taxonomies() {
 		$taxonomies = Habakiri::get_the_taxonomies();
 		foreach ( $taxonomies as $taxonomy_name ) {

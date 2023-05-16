@@ -9,14 +9,13 @@
  * License URI: license.txt
  */
 ?>
-<?php get_header(); ?>
-
+<?php get_header(blog); ?>
 
 <?php get_template_part( 'modules/page-header' ); ?>
 
 
 
-<div class="sub-page-contents">
+<div class="sub-page-contents blog-contents">
 
 	<?php get_template_part( 'blog_templates/single/' . Habakiri::get( 'blog_template' ) ); ?>
 

@@ -13,6 +13,7 @@
 	<div class="entry">
 		<?php do_action( 'habakiri_before_entries' ); ?>
 		<div class="entries entries--archive">
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'summary' ); ?>
 			<?php endwhile; ?>

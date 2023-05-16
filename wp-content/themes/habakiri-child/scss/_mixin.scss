@@ -23,6 +23,14 @@
             @content ;
         }
     }
+
+    @else if $point==tablet_an {
+        //@media (min-width: 50em) { @content ; }
+        //@media (min-width: 768px) { @content ; }
+        @media (max-width: 649px) {
+            @content ;
+        }
+    }
     @else if $point==app_pc {
         //@media (min-width: 50em) { @content ; }
         //@media (min-width: 768px) { @content ; }
@@ -42,7 +50,7 @@
     //	}
     @else if $point==mobile {
         //@media (max-width: 37.5em)  { @content ; }
-        @media (max-width: 900px) {
+        @media (max-width: 1023px) {
             @content ;
         }
     }

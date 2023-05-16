@@ -96,7 +96,7 @@ class Habakiri_Breadcrumbs {
 		foreach ( $this->bread_crumb as $_bread_crumb ) {
 			if ( !empty( $_bread_crumb['link'] ) ) {
 				$bread_crumb[] = sprintf(
-					'<a href="%s">%s</a>',
+					'<li><a href="%s"><img src="https://techtrage-catalog.s3.ap-northeast-1.amazonaws.com/assets/icons/home_icon.png" alt="" class="">%s</a></li>',
 					esc_url( $_bread_crumb['link'] ),
 					esc_html( $_bread_crumb['title'] )
 				);
@@ -106,9 +106,9 @@ class Habakiri_Breadcrumbs {
 		}
 		$bread_crumb[] = sprintf( '<strong>%s</strong>', $last_item['title'] );
 		printf(
-			'<div class="breadcrumbs">%s</div>',
+			'<div class="breadcrumbs"><ul>%s</ul></div>',
 			implode(
-				' &gt; ',
+				' <i class="el-breadcrumb__separator el-icon-arrow-right"></i> ',
 				apply_filters( 'habakiri_bread_crumb', $bread_crumb )
 			)
 		);
@@ -121,7 +121,7 @@ class Habakiri_Breadcrumbs {
 	 */
 	protected function get_home_label() {
 		$page_on_front = get_option( 'page_on_front' );
-		$home_label    = __( 'Home', 'habakiri' );
+		$home_label    = __( 'TOP', 'habakiri' );
 		if ( $page_on_front ) {
 			$home_label = get_the_title( $page_on_front );
 		}
@@ -156,7 +156,7 @@ class Habakiri_Breadcrumbs {
 	 * Add a item at the time of 404 page display
 	 */
 	protected function set_for_404() {
-		$this->set( __( 'Page not found', 'habakiri' ) );
+		$this->set( __( 'ご指定のページが見つかりませんでした', 'habakiri' ) );
 	}
 
 	/**

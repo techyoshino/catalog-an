@@ -545,9 +545,13 @@ class Habakiri_Base_Functions {
 				) );
 				?>
 			<?php else : ?>
+				<?php
+				/*
 				<span class="entry--has_media__text">
 					<?php echo apply_filters( 'habakiri_no_thumbnail_text', get_the_time( 'd' ) ); ?>
 				</span>
+				*/
+				?>
 			<?php endif; ?>
 		</a>
 		<?php
@@ -682,15 +686,37 @@ class Habakiri_Base_Functions {
 
 function add_js_files() {
   //スタイルシートの読み込み
-  wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+//////////////swiper	
+  //wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+
+//////////////slick
+
+wp_enqueue_style( 'slick-style', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');	
+wp_enqueue_style( 'slick-style-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css');	
+
+
+
+
   //fontawesome
   wp_enqueue_style( 'fontawesome-style', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
 
   //JavaScript の読み込み
 
- wp_enqueue_script( 'swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', '', '', true);
+//////////////swiper
+// wp_enqueue_script( 'swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', '', '', true);
+
+
+//////////////slick
+
+//wp_enqueue_script( 'slick-jq', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', '', '', true);
+// wp_enqueue_script( 'slick-js', 'https://kenwheeler.github.io/slick/slick/slick.js', '', '', true);
+ wp_enqueue_script( 'slick.js', '/wp-content/themes/habakiri/js/slick.js', '', '', true);
+
+
  //wp_enqueue_script( 'ajax', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', '', '', true);
  wp_enqueue_script( 'Yy-js', '/wp-content/themes/habakiri/js/Yy.js', '', '', true);
+
+ wp_enqueue_script( 'pagination.js', 'https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js', '', '', true);
   
 }
 add_action('wp_enqueue_scripts', 'add_js_files');

@@ -22,7 +22,7 @@ class Habakiri_Entry_Meta {
 				<?php
 				$entry_meta  = $this->published();
 				$entry_meta .= $this->updated();
-				$entry_meta .= $this->author();
+				//$entry_meta .= $this->author();
 				$entry_meta .= $this->categories();
 				$entry_meta .= $this->tags();
 				$entry_meta .= $this->taxonomies();
@@ -33,6 +33,8 @@ class Habakiri_Entry_Meta {
 		<?php
 		do_action( 'habakiri_after_entry_meta' );
 	}
+
+
 
 	/**
 	 * Return the author
@@ -52,12 +54,28 @@ class Habakiri_Entry_Meta {
 	 */
 	protected function published() {
 		return sprintf(
+			'<li class="entry-meta__item published"><time datetime="%s"><span style="display:none;">%s: </span>%s</time></li>',
+			esc_attr( get_the_date( 'c' ) ),
+			__( 'Published', 'habakiri' ),
+			esc_html( get_the_date() )
+		);
+	}
+
+
+	/**
+	 * Return the public date
+	 */
+
+	/*
+	protected function published() {
+		return sprintf(
 			'<li class="entry-meta__item published"><time datetime="%s">%s: %s</time></li>',
 			esc_attr( get_the_date( 'c' ) ),
 			__( 'Published', 'habakiri' ),
 			esc_html( get_the_date() )
 		);
 	}
+	*/
 
 	/**
 	 * Return the updated date

@@ -19,7 +19,11 @@
 	<div class="container-fluid">
 		<main id="main" role="main">
 
+			<?php
+			/*
 			<?php get_template_part( 'modules/breadcrumbs' ); ?>
+			*/
+			?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 			<?php endwhile; ?>
