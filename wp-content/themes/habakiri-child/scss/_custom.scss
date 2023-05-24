@@ -752,6 +752,10 @@ a:focus{
 .item-bnr {
     display: none;
 
+    a{
+        display: inherit;
+    }
+
     img{
         //max-width: 641px;
       //  height: 100%;
