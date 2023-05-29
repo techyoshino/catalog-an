@@ -1,0 +1,301 @@
+0000.000 (0) Opened log file at time: Wed, 24 May 2023 02:37:35 +0000 on http://localhost:8888/catalog-an
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.24 WP: 5.8.2 PHP: 7.4.12 (apache2handler, Darwin MacBook-Air-2.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:06:51 PST 2021; root:xnu-7195.81.3~1/RELEASE_ARM64_T8101 x86_64) MySQL: 5.7.32 (max packet size=4194304) WPLANG: ja Server: Apache/2.4.46 (Unix) OpenSSL/1.0.2u PHP/7.4.12 mod_wsgi/3.5 Python/2.7.13 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.11 Perl/v5.30.1 safe_mode: 0 max_execution_time: 900 memory_limit: 1G (used: 52.9M | 4.5M) multisite: N openssl: OpenSSL 1.0.2u  20 Dec 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 48002 MB
+0000.004 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: daily)
+0000.005 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 
+0000.011 (0) Requesting semaphore lock (f) (apparently via scheduler: last_scheduled_action_called_at=1684200419, seconds_ago=695436)
+0000.014 (0) Set semaphore last lock (f) time to 2023-05-24 02:37:35
+0000.015 (0) Semaphore lock (f) complete
+0000.017 (0) Backup run: resumption=0, nonce=7c079405d344, file_nonce=7c079405d344 begun at=1684895855 (0s ago), job type=backup
+0000.018 (0) Scheduling a resumption (1) after 300 seconds (1684896155) in case this run gets aborted
+0000.036 (0) Checking if we have a zip executable available
+0000.037 (0) Testing: /usr/bin/zip
+0000.058 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.060 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.061 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.061 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.061 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.089 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.090 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.100 (0) Working binary zip found: /usr/bin/zip
+0000.101 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.101 (0) Creation of backups of directories: beginning
+0000.103 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.310 (0) Total entities for the zip file: 1010 directories, 5779 files (0 skipped as non-modified), 122.1 MB
+0000.313 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.316 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.318 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.320 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.323 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.325 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.328 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.330 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.333 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.335 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.335 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (22.4 MB, 5779 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.005 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: size is now: 6.90 MB
+0001.009 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1100 files added (on-disk size: 7026 KB)
+0001.011 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1200 files added (on-disk size: 7026 KB)
+0001.013 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1300 files added (on-disk size: 7026 KB)
+0001.016 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1400 files added (on-disk size: 7026 KB)
+0001.018 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1500 files added (on-disk size: 7026 KB)
+0001.021 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1600 files added (on-disk size: 7026 KB)
+0001.023 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1700 files added (on-disk size: 7026 KB)
+0001.025 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1800 files added (on-disk size: 7026 KB)
+0001.026 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.6 MB, 5779 files batched, 827 (1828) added so far); re-opening (prior size: 7026 KB)
+0002.025 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: size is now: 16.20 MB
+0002.027 (0) A useful amount of data was added after this amount of zip processing: 1.2 s (normalised: 1.2 s, rate: 21056.7 KB/s)
+0002.028 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.246985912323, normalised_time=1.2157660055866, max_time=2.0267119407654, data points known=1, old_max_bytes=26214400, new_max_bytes=129372263)
+0002.030 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 1900 files added (on-disk size: 16631 KB)
+0002.033 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2000 files added (on-disk size: 16631 KB)
+0002.035 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2100 files added (on-disk size: 16631 KB)
+0002.037 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2200 files added (on-disk size: 16631 KB)
+0002.040 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2300 files added (on-disk size: 16631 KB)
+0002.042 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2400 files added (on-disk size: 16631 KB)
+0002.044 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2500 files added (on-disk size: 16631 KB)
+0002.047 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2600 files added (on-disk size: 16631 KB)
+0002.049 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2700 files added (on-disk size: 16631 KB)
+0002.051 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2800 files added (on-disk size: 16631 KB)
+0002.052 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (18.2 MB, 5779 files batched, 1001 (2829) added so far); re-opening (prior size: 16631 KB)
+0002.575 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: size is now: 26.90 MB
+0002.578 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 2900 files added (on-disk size: 27549.8 KB)
+0002.581 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3000 files added (on-disk size: 27549.8 KB)
+0002.583 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3100 files added (on-disk size: 27549.8 KB)
+0002.586 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3200 files added (on-disk size: 27549.8 KB)
+0002.588 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3300 files added (on-disk size: 27549.8 KB)
+0002.590 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3400 files added (on-disk size: 27549.8 KB)
+0002.592 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3500 files added (on-disk size: 27549.8 KB)
+0002.595 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3600 files added (on-disk size: 27549.8 KB)
+0002.597 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3700 files added (on-disk size: 27549.8 KB)
+0002.599 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3800 files added (on-disk size: 27549.8 KB)
+0002.600 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.1 MB, 5779 files batched, 1001 (3830) added so far); re-opening (prior size: 27549.8 KB)
+0002.947 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 3900 files added (on-disk size: 29665 KB)
+0002.950 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4000 files added (on-disk size: 29665 KB)
+0002.952 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4100 files added (on-disk size: 29665 KB)
+0002.954 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4200 files added (on-disk size: 29665 KB)
+0002.957 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4300 files added (on-disk size: 29665 KB)
+0002.959 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4400 files added (on-disk size: 29665 KB)
+0002.961 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4500 files added (on-disk size: 29665 KB)
+0002.963 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4600 files added (on-disk size: 29665 KB)
+0002.966 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4700 files added (on-disk size: 29665 KB)
+0002.968 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4800 files added (on-disk size: 29665 KB)
+0002.969 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (41.5 MB, 5779 files batched, 1001 (4831) added so far); re-opening (prior size: 29665 KB)
+0004.395 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: size is now: 40.70 MB
+0004.399 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 4900 files added (on-disk size: 41638.9 KB)
+0004.402 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5000 files added (on-disk size: 41638.9 KB)
+0004.404 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5100 files added (on-disk size: 41638.9 KB)
+0004.407 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5200 files added (on-disk size: 41638.9 KB)
+0004.409 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5300 files added (on-disk size: 41638.9 KB)
+0004.411 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5400 files added (on-disk size: 41638.9 KB)
+0004.414 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5500 files added (on-disk size: 41638.9 KB)
+0004.416 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5600 files added (on-disk size: 41638.9 KB)
+0004.419 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.tmp: 5700 files added (on-disk size: 41638.9 KB)
+0004.917 (0) Creating zip file manifest (backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip.list-temp.tmp)
+0004.934 (0) Successfully created zip file manifest (size: 494831)
+0005.772 (0) Created plugins zip (0) - 43763 KB in 5.7 s (7722 KB/s) (sha1: 6b69c725da30131af3a58164761075525301e85b, sha256: af244d2759bbaa9eca10e0b2f1e23800782c92e6912d9de03f5ef948c6b6b1b6)
+0005.781 (0) Cloud backup selection (1/1): ftp with instance (1/1) (last)
+0005.782 (0) Beginning dispatch of backup to remote (ftp) (instance identifier s-fe96cd629d93e894c4ded28e47349888)
+0005.936 (0) FTP: upload attempt: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip -> ftp://knowledgeholder@knowledgeholder.sakura.ne.jp//home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip
+0006.071 (0) Ftp chunked upload: 1.2 % uploaded
+0006.101 (0) Ftp chunked upload: 2.4 % uploaded
+0006.122 (0) Ftp chunked upload: 3.5 % uploaded
+0006.142 (0) Ftp chunked upload: 4.7 % uploaded
+0006.180 (0) Ftp chunked upload: 7.1 % uploaded
+0006.220 (0) Ftp chunked upload: 9.4 % uploaded
+0006.294 (0) Ftp chunked upload: 14.1 % uploaded
+0006.368 (0) Ftp chunked upload: 18.8 % uploaded
+0006.442 (0) Ftp chunked upload: 23.5 % uploaded
+0006.515 (0) Ftp chunked upload: 28.2 % uploaded
+0006.588 (0) Ftp chunked upload: 32.9 % uploaded
+0006.663 (0) Ftp chunked upload: 37.5 % uploaded
+0006.737 (0) Ftp chunked upload: 42.2 % uploaded
+0006.810 (0) Ftp chunked upload: 46.9 % uploaded
+0006.883 (0) Ftp chunked upload: 51.6 % uploaded
+0006.956 (0) Ftp chunked upload: 56.3 % uploaded
+0007.030 (0) Ftp chunked upload: 61 % uploaded
+0007.103 (0) Ftp chunked upload: 65.7 % uploaded
+0007.178 (0) Ftp chunked upload: 70.4 % uploaded
+0007.251 (0) Ftp chunked upload: 75 % uploaded
+0007.325 (0) Ftp chunked upload: 79.7 % uploaded
+0007.398 (0) Ftp chunked upload: 84.4 % uploaded
+0007.471 (0) Ftp chunked upload: 89.1 % uploaded
+0007.545 (0) Ftp chunked upload: 93.8 % uploaded
+0007.618 (0) Ftp chunked upload: 98.5 % uploaded
+0007.657 (0) FTP: upload attempt successful (43763KB in 1.72s)
+0007.657 (0) Recording as successfully uploaded: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip
+0007.659 (0) Deleting local file: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip: OK
+0007.676 (0) Beginning creation of dump of themes (split every: 400 MB)
+0007.711 (0) Total entities for the zip file: 161 directories, 869 files (0 skipped as non-modified), 27.7 MB
+0007.713 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0007.715 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0007.718 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0007.720 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0007.722 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0007.724 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0007.726 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0007.729 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0008.312 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.tmp: size is now: 22.20 MB
+0008.332 (0) Creating zip file manifest (backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip.list-temp.tmp)
+0008.335 (0) Successfully created zip file manifest (size: 58293)
+0008.772 (0) Created themes zip (0) - 22756 KB in 1.1 s (20778 KB/s) (sha1: 029947074ce6db0d116d6ad88721625790dda9d0, sha256: 34582b237725ea5165e2e9d1aecbcb721c0d1503730d97c4101871494ff3adb6)
+0008.775 (0) Cloud backup selection (1/1): ftp with instance (1/1) (last)
+0008.776 (0) Beginning dispatch of backup to remote (ftp) (instance identifier s-fe96cd629d93e894c4ded28e47349888)
+0008.901 (0) FTP: upload attempt: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip -> ftp://knowledgeholder@knowledgeholder.sakura.ne.jp//home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip
+0009.040 (0) Ftp chunked upload: 2.3 % uploaded
+0009.076 (0) Ftp chunked upload: 4.5 % uploaded
+0009.100 (0) Ftp chunked upload: 6.8 % uploaded
+0009.119 (0) Ftp chunked upload: 9.1 % uploaded
+0009.157 (0) Ftp chunked upload: 13.6 % uploaded
+0009.195 (0) Ftp chunked upload: 18.1 % uploaded
+0009.269 (0) Ftp chunked upload: 27.1 % uploaded
+0009.343 (0) Ftp chunked upload: 36.1 % uploaded
+0009.416 (0) Ftp chunked upload: 45.1 % uploaded
+0009.490 (0) Ftp chunked upload: 54.2 % uploaded
+0009.563 (0) Ftp chunked upload: 63.2 % uploaded
+0009.637 (0) Ftp chunked upload: 72.2 % uploaded
+0009.710 (0) Ftp chunked upload: 81.2 % uploaded
+0009.784 (0) Ftp chunked upload: 90.2 % uploaded
+0009.859 (0) Ftp chunked upload: 99.2 % uploaded
+0009.881 (0) FTP: upload attempt successful (22756KB in 0.98s)
+0009.881 (0) Recording as successfully uploaded: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip
+0009.883 (0) Deleting local file: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip: OK
+0009.899 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0009.900 (0) Looking for candidates to backup in: /Users/yoshinoyasushi/Desktop/dev/catalog-an/wp-content/uploads
+0009.900 (0) finding files: 2022: adding to list (1)
+0009.900 (0) finding files: 2023: adding to list (2)
+0009.901 (0) finding files: wpcf7_uploads: adding to list (3)
+0009.901 (0) finding files: elementor: adding to list (4)
+0009.901 (0) finding files: 2021: adding to list (5)
+0009.902 (0) finding files: cocoon-resources: adding to list (6)
+0009.902 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0009.916 (0) Total entities for the zip file: 31 directories, 276 files (0 skipped as non-modified), 23.3 MB
+0009.919 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0009.921 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.100 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip.tmp: size is now: 23.20 MB
+0010.107 (0) Creating zip file manifest (backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip.list-temp.tmp)
+0010.108 (0) Successfully created zip file manifest (size: 15099)
+0010.565 (0) Created uploads zip (0) - 23719.3 KB in 0.7 s (35850.6 KB/s) (sha1: 111aafb4fc8d507e118c8a64efe9d47265d17d53, sha256: 2ecbf6527571b43f0b4a5bbffbf8926fdabedf5927594118e2190b9b1f8db3c5)
+0010.568 (0) Cloud backup selection (1/1): ftp with instance (1/1) (last)
+0010.568 (0) Beginning dispatch of backup to remote (ftp) (instance identifier s-fe96cd629d93e894c4ded28e47349888)
+0010.688 (0) FTP: upload attempt: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip -> ftp://knowledgeholder@knowledgeholder.sakura.ne.jp//home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip
+0010.826 (0) Ftp chunked upload: 2.2 % uploaded
+0010.859 (0) Ftp chunked upload: 4.3 % uploaded
+0010.881 (0) Ftp chunked upload: 6.5 % uploaded
+0010.901 (0) Ftp chunked upload: 8.7 % uploaded
+0010.940 (0) Ftp chunked upload: 13 % uploaded
+0010.979 (0) Ftp chunked upload: 17.4 % uploaded
+0011.053 (0) Ftp chunked upload: 26 % uploaded
+0011.127 (0) Ftp chunked upload: 34.7 % uploaded
+0011.201 (0) Ftp chunked upload: 43.3 % uploaded
+0011.275 (0) Ftp chunked upload: 52 % uploaded
+0011.349 (0) Ftp chunked upload: 60.6 % uploaded
+0011.423 (0) Ftp chunked upload: 69.3 % uploaded
+0011.497 (0) Ftp chunked upload: 77.9 % uploaded
+0011.572 (0) Ftp chunked upload: 86.6 % uploaded
+0011.646 (0) Ftp chunked upload: 95.2 % uploaded
+0011.701 (0) FTP: upload attempt successful (23719.3KB in 1.01s)
+0011.702 (0) Recording as successfully uploaded: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip
+0011.703 (0) Deleting local file: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip: OK
+0011.720 (0) Beginning backup of other directories found in the content directory (index: 0)
+0011.721 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0011.721 (0) Looking for candidates to backup in: /Users/yoshinoyasushi/Desktop/dev/catalog-an/wp-content
+0011.721 (0) finding files: upgrade: skipping: excluded by options
+0011.722 (0) finding files: .DS_Store: adding to list (1)
+0011.722 (0) finding files: index.php: adding to list (2)
+0011.723 (0) finding files: plugins: skipping: this is the plugins directory
+0011.723 (0) finding files: ewww: adding to list (3)
+0011.724 (0) finding files: uploads: skipping: this is the uploads directory
+0011.724 (0) finding files: updraft: skipping: this is the updraft directory
+0011.724 (0) finding files: languages: adding to list (4)
+0011.725 (0) finding files: themes: skipping: this is the themes directory
+0011.738 (0) Total entities for the zip file: 25 directories, 284 files (0 skipped as non-modified), 23.6 MB
+0011.741 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0011.743 (0) Zip: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0012.095 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip.tmp: size is now: 20.10 MB
+0012.102 (0) Creating zip file manifest (backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip.list-temp.tmp)
+0012.104 (0) Successfully created zip file manifest (size: 18619)
+0012.500 (0) Created others zip (0) - 20632.4 KB in 0.8 s (26670.4 KB/s) (sha1: 90fc5778c19c72ff1dbf6d75f1bd1fc18cd18ce3, sha256: 89ca6897bbf7c6983e2eec133deddab6a0ac691ff8fc20a0bd725a77835a8887)
+0012.503 (0) Cloud backup selection (1/1): ftp with instance (1/1) (last)
+0012.503 (0) Beginning dispatch of backup to remote (ftp) (instance identifier s-fe96cd629d93e894c4ded28e47349888)
+0012.636 (0) FTP: upload attempt: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip -> ftp://knowledgeholder@knowledgeholder.sakura.ne.jp//home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip
+0012.775 (0) Ftp chunked upload: 2.5 % uploaded
+0012.813 (0) Ftp chunked upload: 5 % uploaded
+0012.838 (0) Ftp chunked upload: 7.5 % uploaded
+0012.857 (0) Ftp chunked upload: 10 % uploaded
+0012.895 (0) Ftp chunked upload: 15 % uploaded
+0012.933 (0) Ftp chunked upload: 20 % uploaded
+0013.007 (0) Ftp chunked upload: 29.9 % uploaded
+0013.081 (0) Ftp chunked upload: 39.8 % uploaded
+0013.154 (0) Ftp chunked upload: 49.8 % uploaded
+0013.227 (0) Ftp chunked upload: 59.7 % uploaded
+0013.301 (0) Ftp chunked upload: 69.7 % uploaded
+0013.375 (0) Ftp chunked upload: 79.6 % uploaded
+0013.449 (0) Ftp chunked upload: 89.6 % uploaded
+0013.524 (0) Ftp chunked upload: 99.5 % uploaded
+0013.561 (0) FTP: upload attempt successful (20632.4KB in 0.92s)
+0013.562 (0) Recording as successfully uploaded: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip
+0013.563 (0) Deleting local file: backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip: OK
+0013.582 (0) Saving backup status to database (elements: 8)
+0013.584 (0) No database backup (wp) - not part of this run
+0013.586 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-plugins.zip: plugins: This file has already been successfully uploaded
+0013.586 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-themes.zip: themes: This file has already been successfully uploaded
+0013.587 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-uploads.zip: uploads: This file has already been successfully uploaded
+0013.587 (0) backup_2023-05-24-0237_localhost_catalogan_7c079405d344-others.zip: others: This file has already been successfully uploaded
+0013.587 (0) Saving backup history. Total backup size: 108.3 MB
+0013.589 (0) Resume backup (7c079405d344, 0): finish run
+0013.590 (0) There were no more files that needed uploading
+0013.591 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=5
+0013.592 (0) Number of backup sets in history: 8; groups (db): 1
+0013.593 (0) Examining (for databases) backup set with group_id=0, nonce=7c079405d344, datestamp=1684895855 (May 24 2023 02:37:35)
+0013.593 (0) Examining (for databases) backup set with group_id=0, nonce=09d8e932f510, datestamp=1684385775 (May 18 2023 04:56:15)
+0013.593 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.593 (0) Examining (for databases) backup set with group_id=0, nonce=3193ed9f3c58, datestamp=1684369742 (May 18 2023 00:29:02)
+0013.593 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.594 (0) Examining (for databases) backup set with group_id=0, nonce=31815d765af7, datestamp=1684201720 (May 16 2023 01:48:40)
+0013.594 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.594 (0) Examining (for databases) backup set with group_id=0, nonce=c28498d13282, datestamp=1684200434 (May 16 2023 01:27:14)
+0013.594 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.594 (0) Examining (for databases) backup set with group_id=0, nonce=b111905c4417, datestamp=1684200419 (May 16 2023 01:26:59)
+0013.594 (0) Examining (for databases) backup set with group_id=0, nonce=934ce23b6e3a, datestamp=1683772173 (May 11 2023 02:29:33)
+0013.594 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.594 (0) Examining (for databases) backup set with group_id=0, nonce=5590c498a314, datestamp=1683311794 (May 05 2023 18:36:34)
+0013.594 (0) Number of backup sets in history: 8; groups (files): 1
+0013.594 (0) Examining (for files) backup set with nonce=7c079405d344, datestamp=1684895855 (May 24 2023 02:37:35)
+0013.594 (0) This backup set is the backup set just made, so will not be deleted.
+0013.595 (0) This backup set is the backup set just made, so will not be deleted.
+0013.595 (0) This backup set is the backup set just made, so will not be deleted.
+0013.595 (0) This backup set is the backup set just made, so will not be deleted.
+0013.595 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0013.595 (0) Examining (for files) backup set with nonce=09d8e932f510, datestamp=1684385775 (May 18 2023 04:56:15)
+0013.595 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.596 (0) Examining (for files) backup set with nonce=3193ed9f3c58, datestamp=1684369742 (May 18 2023 00:29:02)
+0013.596 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.596 (0) Examining (for files) backup set with nonce=31815d765af7, datestamp=1684201720 (May 16 2023 01:48:40)
+0013.596 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.596 (0) Examining (for files) backup set with nonce=c28498d13282, datestamp=1684200434 (May 16 2023 01:27:14)
+0013.596 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.596 (0) Examining (for files) backup set with nonce=b111905c4417, datestamp=1684200419 (May 16 2023 01:26:59)
+0013.596 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0013.596 (0) Examining (for files) backup set with nonce=934ce23b6e3a, datestamp=1683772173 (May 11 2023 02:29:33)
+0013.596 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0013.597 (0) Examining (for files) backup set with nonce=5590c498a314, datestamp=1683311794 (May 05 2023 18:36:34)
+0013.597 (0) plugins: over retain limit (2); will delete this file entity
+0013.597 (0) themes: over retain limit (2); will delete this file entity
+0013.597 (0) uploads: over retain limit (2); will delete this file entity
+0013.597 (0) others: over retain limit (2); will delete this file entity
+0013.597 (0) Delete file: backup_2023-05-05-1836_localhost_catalogan_5590c498a314-plugins.zip, service=ftp
+0013.597 (0) Delete file: backup_2023-05-05-1836_localhost_catalogan_5590c498a314-themes.zip, service=ftp
+0013.597 (0) Delete file: backup_2023-05-05-1836_localhost_catalogan_5590c498a314-uploads.zip, service=ftp
+0013.598 (0) Delete file: backup_2023-05-05-1836_localhost_catalogan_5590c498a314-others.zip, service=ftp
+0013.886 (0) FTP: delete: succeeded (/home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-05-1836_localhost_catalogan_5590c498a314-plugins.zip)
+0013.903 (0) FTP: delete: succeeded (/home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-05-1836_localhost_catalogan_5590c498a314-themes.zip)
+0013.920 (0) FTP: delete: succeeded (/home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-05-1836_localhost_catalogan_5590c498a314-uploads.zip)
+0013.935 (0) FTP: delete: succeeded (/home/knowledgeholder/www/BK/kikaicatalog.com/backup_2023-05-05-1836_localhost_catalogan_5590c498a314-others.zip)
+0013.955 (0) This backup set is now empty; will remove from history
+0013.956 (0) Deleting log file (log.5590c498a314.txt)
+0013.960 (0) Retain: saving new backup history (sets now: 7) and finishing retain operation
+0013.967 (0) Decremented the semaphore (f) by 1
+0013.969 (0) Semaphore (f) unlocked
+0013.970 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0013.974 (0) No email will/can be sent - the user has not configured an email address.
+0013.975 (0) The backup apparently succeeded and is now complete
